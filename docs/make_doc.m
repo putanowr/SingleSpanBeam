@@ -3,7 +3,7 @@ function make_doc
 
 %#ok<*STRNU>
 
-import mypackage.internal.util.*
+import beam2D.internal.util.*
 
 RAII.cd = withcd(fileparts(mfilename('fullpath')));
 rmdir2('../doc', 's');

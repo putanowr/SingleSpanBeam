@@ -5,5 +5,5 @@ function rmrf(files)
 arguments
   files string
 end
-mypackage.internal.util.rmrf(files);
+beam2D.internal.util.rmrf(files);
 end

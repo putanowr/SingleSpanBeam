@@ -3,5 +3,5 @@ function out = withwarnoff(warningId)
 arguments
   warningId string
 end
-out = mypackage.internal.util.withwarnoff(warningId);
+out = beam2D.internal.util.withwarnoff(warningId);
 end

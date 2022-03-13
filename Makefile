@@ -25,52 +25,52 @@
 
 .PHONY: test
 test:
-	./dev-kit/run_matlab "mypackage_make test"
+	./dev-kit/run_matlab "beam2D_make test"
 
 .PHONY: build
 build:
-	./dev-kit/run_matlab "mypackage_make build"
+	./dev-kit/run_matlab "beam2D_make build"
 
 # Build the programmatically-generated parts of the _source_ files for the doco
 .PHONY: docs
 docs:
-	./dev-kit/run_matlab "mypackage_make docs"
+	./dev-kit/run_matlab "beam2D_make docs"
 
 # Build the actual output documents
 .PHONY: doc
 doc:
-	./dev-kit/run_matlab "mypackage_make doc"
+	./dev-kit/run_matlab "beam2D_make doc"
 
 .PHONY: m-doc
 m-doc:
-	./dev-kit/run_matlab "mypackage_make m-doc"
+	./dev-kit/run_matlab "beam2D_make m-doc"
 
 .PHONY: toolbox
 toolbox: m-doc
-	./dev-kit/run_matlab "mypackage_make toolbox"
+	./dev-kit/run_matlab "beam2D_make toolbox"
 
 .PHONY: zips
 zips:
-	./dev-kit/run_matlab "mypackage_make zips"
+	./dev-kit/run_matlab "beam2D_make zips"
 
 .PHONY: dist
 dist:
-	./dev-kit/run_matlab "mypackage_make dist"
+	./dev-kit/run_matlab "beam2D_make dist"
 
 # TODO: Port this to M-code. This is hard because the .jar cannot be copied in to place
 # in lib while Matlab is running, because it locks loaded .jar files (at least on Windows).
 .PHONY: java
 java:
-	cd src/java/myproject-java; mvn package
-	mkdir -p lib/java/myproject-java
-	cp src/java/myproject-java/target/*.jar lib/java/myproject-java
+	cd src/java/SingleSpanBeam-java; mvn package
+	mkdir -p lib/java/SingleSpanBeam-java
+	cp src/java/SingleSpanBeam-java/target/*.jar lib/java/SingleSpanBeam-java
 
 .PHONY: clean
 clean:
-	./dev-kit/run_matlab "mypackage_make clean"
+	./dev-kit/run_matlab "beam2D_make clean"
 
 # Run this _after_ initialization if you want to throw away some nonessential
 # features to make your repo layout simpler.
 .PHONY: simplify
 simplify:
-	./dev-kit/run_matlab "mypackage_make simplify"
+	./dev-kit/run_matlab "beam2D_make simplify"
