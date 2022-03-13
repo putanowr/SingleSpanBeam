@@ -11,7 +11,8 @@ The main index page for your project documentation goes here!
 FEAM analysis of single-span beams.
 
 The view of initial version of SingleSpanBeam GUI:
-![InitialGUI](/images/SingleSpanBeamGUI.png)
+
+![InitialGUI](images/SingleSpanBeamGUI.png)
 
 ## Requirements
 
