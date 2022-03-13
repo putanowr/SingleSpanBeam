@@ -10,6 +10,8 @@ The main index page for your project documentation goes here!
 
 FEAM analysis of single-span beams.
 
+![InitialGUI](/docs/images/SingleSpanBeamGUI.png)
+
 ## Requirements
 
 TODO!
